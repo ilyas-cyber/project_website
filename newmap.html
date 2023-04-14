@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Location Map</title>
+    <script src="index.js"></script>
+    <script type='text/javascript'
+      src='https://www.bing.com/api/maps/mapcontrol?key=AuK2Azrt3w9gxRMlMrgjzXZ0f2to9NbfewreFM1qp_nVcPKgcJZCWj_AC5gdRfX9'></script>
+    <script type='text/javascript'>
+      function displayMap(latitude, longitude) {
+        // Create a new map object centered on the user's location
+        const center = new Microsoft.Maps.Location(latitude, longitude);
+        const map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+          mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+          zoom: 21,
+          center: center
+        });
+
+        // Add a pushpin to the map at the user's location
+        const pin = new Microsoft.Maps.Pushpin(center, { draggable: true });
+        map.entities.push(pin);
+        // const pin = new Microsoft.Maps.Pushpin(center, { draggable: true });
+        pin.addEventListener('dragend', event => {
+          console.log(`New pin location: ${pin.getLocation().latitude}, ${pin.getLocation().longitude}`);
+        });
+      }
+
+      function redirectToMap(location) {
+        // Encode the location and redirect to the map page
+        const encodedLocation = encodeURIComponent(location);
+        window.location.href = `map.html?location=${encodedLocation}`;
+      }
+    </script>
+  </head>
+  <body>
+    <form id="form">
+      <label for="location-input">Enter your location:</label>
+      <input type="text" id="location-input" name="location-input" />
+      <button type="submit">Show on Map</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login system of Site Owner</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <section class="box">
+        <div class="design">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="form">
+            <h2>Site Owner LOGIN</h2>
+            <form action="/owner-login" method="POST">
+                <input type="email" name="username" class="input-field" placeholder="Username" />
+                <input type="password" name="password" class="input-field" placeholder="Password" />
+                <input type="text" name="token" class="input-field" placeholder="Verification code" required/>
+                <input type="submit" class="btn" value="LOGIN">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

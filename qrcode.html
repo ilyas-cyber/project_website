@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Generator</title>
+    <script>
+        function generateQR() {
+          const inputText = document.getElementById('inputText').value;
+          const xhr = new XMLHttpRequest();
+          xhr.open('POST', '/generateQR');
+          xhr.setRequestHeader('Content-Type', 'application/json');
+          xhr.onload = () => {
+            const qrCode = document.getElementById('qrCode');
+            qrCode.innerHTML = `<img src="${xhr.responseText}" alt="QR Code">`;
+          };
+          xhr.send(JSON.stringify({ text: inputText }));
+        }
+      </script>
+      
+  </head>
+  <body>
+    <h1>Generate QR Code</h1>
+    <input type="text" id="inputText" placeholder="Enter text here">
+    <button onclick="generateQR()">Generate QR Code</button>
+    <br>
+    <br>
+    <div id="qrCode"></div>
+  </body>
+</html>

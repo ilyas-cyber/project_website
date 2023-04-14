@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="Waqar Bugti Baloch is a highly skilled front-end developer and graphics designer with a passion for creating visually stunning and user-friendly websites and designs. Check out my portfolio to see my work." />
+  <meta name="keywords"
+    content="front-end development, graphic design, web design, user experience, user interface, HTML, CSS, JavaScript, portfolio, freelancer, Dera Bugti, Mission, Vision, Values,  Waqar Bugti Baloch" />
+  <meta name="author" content="Waqar Bugti Baloch" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="revisit-after" content="1 days" />
+  <meta name="google-site-verification" content="[Insert Google Verification Code]" />
+
+  <link rel="icon" type="image/xx-icon" href="images/Logo/Favicon.png" />
+  <link rel="stylesheet" href="index.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://kit.fontawesome.com/c6287e70a2.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+  <!-- <script src="index.js"></script> -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Manrope&family=Montserrat&family=Pacifico&family=Parisienne&family=Permanent+Marker&family=Poppins&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Pacifico&family=Parisienne&family=Poppins&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      text-decoration: none;
+      font-family: 'Montserrat', Courier, monospace;
+      letter-spacing: 1px;
+    }
+
+    /* Firefox */
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: #7E7E7E #DFE9EB;
+    }
+
+    /* Chrome, Edge and Safari */
+    *::-webkit-scrollbar {
+      width: 0px;
+      width: 0px;
+    }
+
+    *::-webkit-scrollbar-track {
+      border-radius: 5px;
+      background-color: #DFE9EB;
+    }
+
+    *::-webkit-scrollbar-track:hover {
+      background-color: #B8C0C2;
+    }
+
+    *::-webkit-scrollbar-track:active {
+      background-color: #B8C0C2;
+    }
+
+    *::-webkit-scrollbar-thumb {
+      border-radius: 18px;
+      background-color: #7E7E7E;
+    }
+
+    *::-webkit-scrollbar-thumb:hover {
+      background-color: #5012E0;
+    }
+
+    *::-webkit-scrollbar-thumb:active {
+      background-color: #A3A3A3;
+    }
+
+
+
+    /* ========================Header Code Starts here=============== */
+
+    /* header styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px 0rem;
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.95);
+      /* position: fixed; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      z-index: 999;
+      transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+      /* Glassmorphism effect */
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      /* border-radius: 10px; */
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+
+
+    .nav-logo img {
+      width: 8rem;
+      height: auto;
+    }
+
+
+    /*--------- language selector styles ---------*/
+    .lang-selector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lang-selector label {
+      margin-right: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      outline: none;
+    }
+
+    .lang-selector select {
+      font-size: 16px;
+      padding: 5px 20px;
+      border-radius: 100px;
+      outline: none;
+    }
+
+    #language-select option {
+      /* border: none; */
+    }
+
+
+
+    /* -----------hamburger menu code---------------- */
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      padding: 0 50px;
+      color: white;
+    }
+
+    .menu-icon {
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .menu-icon i {
+      color: rgba(0, 0, 0, 0.562);
+      font-size: 24px;
+    }
+
+    .menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      margin-top: 1rem;
+      right: 1%;
+      width: 30%;
+      /* background-color: rgba(255, 255, 255, 0.95); */
+      border-radius: 10px;
+      overflow: hidden;
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+
+      /* Glassmorphism effect */
+      /* background-color: rgb(255, 255, 255); */
+      /* backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2); */
+
+      background-color: rgba(255, 255, 255, 0.45);
+
+      backdrop-filter: blur(15px);
+      transition: all 0.3s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+
+    .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      z-index: 222;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu li {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 10px 20px;
+    }
+
+    .menu li:last-child {
+      border-bottom: none;
+    }
+
+    .menu ul li:hover {
+      background-color: darkorange;
+    }
+
+    .menu ul li:hover a {
+      color: white;
+      transition: all .01s ease;
+    }
+
+    .menu a {
+      color: rgba(11, 11, 19, 0.938);
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.9s ease-in-out;
+    }
+
+    .menu-icon.active i {
+      color: rgba(0, 0, 0, 0.8);
+
+    }
+
+
+
+    .menu.active {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+      z-index: 2;
+      transform: translateY(0);
+    }
+
+    .menu.active li a:hover {
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    @media (max-width: 768px) {
+      .menu-icon {
+        transform: translateX(-30px);
+      }
+
+      .menu {
+        transform: translateY(-50px);
+      }
+    }
+
+    /* ===============HERO SECTION CODE IS HERE================= */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 3.2rem;
+      padding-left: 3rem;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      overflow: hidden;
+      padding-bottom: 3rem;
+
+    }
+
+    .hero-title-text {
+      width: 45%;
+      padding: 2.5rem 0rem;
+    }
+
+    .hero-text {
+      display: inline-flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: bolder;
+      font-family: 'Poppins', sans-serif;
+      color: rgb(1, 2, 15);
+      line-height: 3.4rem;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      padding-right: 3rem;
+      margin-top: 1rem;
+      line-height: 1.7rem;
+    }
+
+    .hero-text h1 span {
+      font-family: 'Poppins', sans-serif;
+      font-weight: bolder;
+      background: #fe8c00;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #f83600, #fe8c00);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* ===========Hero section image code is here============ */
+    .hero-image {
+      position: absolute;
+      top: 12%;
+      left: 0;
+      opacity: 1;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .hero-image img {
+      /* object-fit: cover; */
+      width: 100%;
+      height: 100%;
+      -webkit-clip-path: polygon(63% 0, 100% 0%, 100% 100%, 41% 100%);
+      clip-path: polygon(63% 0, 100% 0%, 100% 100%, 41% 100%);
+    }
+
+
+    /* ======================Address Search Bar CoDE============== */
+
+    .hero-search {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      overflow: hidden;
+      padding: 1rem;
+      margin-top: -1.4rem;
+    }
+
+
+    #address-form {
+      display: flex;
+      width: 55%;
+      background-color: white;
+      overflow: hidden;
+      align-items: center;
+      padding: 0rem 0.2rem;
+      justify-content: space-between;
+      border-radius: 50px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+
+    #location-input {
+      padding: 1.2rem;
+      font-size: 1rem;
+      border: none;
+      width: 82%;
+      outline: none;
+    }
+
+    #location-input::placeholder {
+      color: #999;
+    }
+
+    #self-locate-button {
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      border: none;
+      margin-left: 1rem;
+      cursor: pointer;
+    }
+
+    #self-locate-button:hover {
+      background-color: #555;
+    }
+
+    button[type="submit"] {
+      background-color: #333;
+      color: #ffff;
+      border: none;
+      width: 53px;
+      height: 53px;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    button[type="submit"] i {
+      font-size: 17px;
+    }
+
+    button[type="submit"]:hover {
+      background-color: royalblue;
+    }
+
+    /* =======================Featured Code Start From Here============== */
+
+    /* Featured section styles */
+    .featured-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin: 5rem auto;
+      max-width: 1200px;
+      width: 95%;
+      /* background-color: #f5f5f5; */
+      background-color: rgba(255, 255, 255, 0.11);
+      backdrop-filter: blur(15px);
+      transition: all 0.3s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      border-radius: 20px;
+      padding: 1rem 1rem;
+      overflow: hidden;
+      /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+      /* background: url(https://source.unsplash.com/E8Ufcyxz514/2400x1823) center / cover no-repeat fixed; */
+    }
+
+    .featured-section .featured-title {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 94%;
+      padding: 2rem;
+      margin-bottom: 1rem;
+      border-radius: 20px;
+      background-color: white;
+
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      background-color: rgba(255, 255, 255, 0.45);
+
+      backdrop-filter: blur(15px);
+      flex-basis: calc(50% - 1rem);
+      transition: all 0.3s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgb
+    }
+
+    .featured-section .featured-title h3 {
+      color: rgb(5, 0, 34);
+    }
+
+    .featured-section .featured-title h3 span {
+      font-family: 'Poppins', sans-serif;
+      font-weight: bolder;
+      background: #fe8c00;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #f83600, #fe8c00);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .featured-item {
+      width: calc(50% - 20px);
+      margin-bottom: 15px;
+      /* padding: 20px; */
+      border-radius: 10px;
+      padding: 2rem;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.45);
+
+      backdrop-filter: blur(15px);
+      flex-basis: calc(50% - 1rem);
+      transition: all 0.3s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    .featured-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .featured-item h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .featured-item p {
+      font-size: 16px;
+      color: #020418;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      .featured-item {
+        width: calc(33.33% - 15px);
+      }
+    }
+
+    .item1 {
+      width: 90%;
+      padding: 5rem 3rem;
+    }
+
+    .item12 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+    }
+
+    .item12 .item {
+      height: 190px;
+      padding: 5rem 3rem;
+      margin: 0.1rem;
+      padding-bottom: 7rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Media queries for responsiveness */
+    @media screen and (max-width: 767px) {
+      .featured-item {
+        width: 100%;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      .featured-item {
+        width: calc(50% - 10px);
+      }
+    }
+
+    .featured-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      backdrop-filter: blur(15px);
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    .featured-logo i {
+      color: rgb(0, 1, 22);
+      font-size: larger;
+    }
+
+
+    /* ======================Happy Customers Code is here============= */
+    .customer-section-inside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 1rem;
+      margin-top: .1rem;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+      /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;   */
+      background: url(https://source.unsplash.com/E8Ufcyxz514/2400x1823) center / cover no-repeat fixed;
+    }
+
+    .customer-section {
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 50px;
+      background-color: #f5f5f5;
+      border: 1ps solid #f83600;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.45);
+
+      backdrop-filter: blur(15px);
+      transition: all 0.3s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+    }
+
+    .image-container {
+      flex: 1;
+    }
+
+    .image-container img {
+      width: 28rem;
+      height: 28rem;
+    }
+
+    .text-container {
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #010011;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #02000f;
+      margin-bottom: 10px;
+    }
+
+    /* Media queries for smaller screens */
+    @media screen and (max-width: 768px) {
+      .customer-section {
+        padding: 30px;
+      }
+
+      .image-container,
+      .text-container {
+        max-width: 100%;
+      }
+    }
+
+    /* Media queries for even smaller screens */
+    @media screen and (max-width: 480px) {
+      h2 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+
+    .customer-section .text-container h2 span {
+      /* font-family: 'Poppins', sans-serif; */
+      font-weight: bolder;
+      background: #fe8c00;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #f83600, #fe8c00);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .customer-section .text-container p span {
+      /* font-family: 'Poppins', sans-serif; */
+      color: white;
+    }
+
+
+    .otovo-section {
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 50px;
+      background-color: #f5f5f5;
+      border: 1ps solid #f83600;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.45);
+
+      backdrop-filter: blur(15px);
+      transition: all 0.3s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+    }
+
+    .otovo-section .text-container span {
+      font-weight: bold;
+    }
+
+    .otovo-section .text-container h2 span {
+      font-family: 'Poppins', sans-serif;
+      font-weight: bolder;
+      background: #fe8c00;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #f83600, #fe8c00);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .otovo-text h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .otovo-text p {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+
+
+    @media only screen and (min-width: 768px) {
+      .otovo-section {
+        margin: 100px 0;
+      }
+
+      .otovo-text {
+        flex-basis: 50%;
+        text-align: left;
+      }
+
+      .otovo-text p {
+        font-size: 1em;
+      }
+
+      .otovo-section img {
+        flex-basis: 50%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .system-image img {
+      width: 30rem;
+      height: 23rem;
+    }
+
+
+    /* ===================Footer Code is Here============ */
+    footer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      overflow: hidden;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      background: url(https://source.unsplash.com/E8Ufcyxz514/2400x1823) center / cover no-repeat fixed;
+    }
+
+    .footer-top {
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      padding-top: 5rem;
+      text-align: center;
+      background-color: #f5f5f5;
+      background-color: rgba(255, 255, 255, 0.45);
+      backdrop-filter: blur(15px);
+      transition: all 0.3s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    .footer-top .row {
+      display: inline-flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    footer h3 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #050024;
+
+    }
+
+
+
+    footer p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    footer ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    footer li {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    footer li i {
+      color: #050024;
+      font-size: 22px;
+    }
+
+    .social-icons li {
+      display: inline-block;
+      margin-right: 10px;
+      position: relative;
+    }
+
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 55px;
+      height: 55px;
+      overflow: hidden;
+      backdrop-filter: blur(15px);
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+
+
+
+    .social-icons a:hover {
+      background: #ffffff;
+    }
+
+    .social-icons a:hover i {
+      color: #050024;
+    }
+
+    .footer-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+    }
+
+    .footer-links li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .footer-links li:first-child {
+      margin-left: 0;
+    }
+
+    .footer-links a {
+      color: #050024;
+      font-size: 16px;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+
+    }
+
+    .footer-links a:hover {
+      color: #010211;
+      text-decoration: underline;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .footer-links li a i {
+      font-size: smaller;
+      color: white;
+      display: none;
+    }
+
+    hr {
+      margin: 40px 0;
+      border: none;
+      border-top: 1px solid #ffffff;
+    }
+
+    /* Media queries */
+
+    @media (max-width: 767px) {
+      footer {
+        text-align: center;
+      }
+
+      .footer-links {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .footer-links li {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+  <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+      <script>
+         function loadGoogleTranslate(){
+            new google.translate.TranslateElement("language");
+         }
+         function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+               pageLanguage: 'en',
+               includedLanguages: 'de,en,es,fr,it,ja,ko,pt,ru,zh-CN,zh-TW',
+               layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+               autoDisplay: false
+            }, 'google_translate_element');
+         }
+      </script>
+</head>
+
+<body>
+
+  <!-- =========================Header ============================== -->
+
+  <!-- <h1>Solar Energy Potential in Switzerland</h1>
+    <header>
+      <nav>
+      <ul>
+        <li><a href="http://localhost:3000/login">Sign-in</a></li>
+        <li><a href="http://localhost:3000/partner-login">Partner Company</a></li>
+        <li><a href="http://localhost:3000/Pv">Advanced Pv Calculation</a></li>
+        <li><a href="http://localhost:3000/submit-form">Connect With US</a></li>
+      </ul>
+    </header>
+    </nav> -->
+
+
+  <header>
+
+    <div id="language" class="lang-selector">
+    </div>
+
+    <div class="nav-logo">
+      <img src="images/Logo/Logo.png" alt="">
+    </div>
+
+    <nav>
+      <div class="menu-icon">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+      <div class="logo">
+
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Partner Company</a></li>
+          <li><a href="#">Advanced Pv Calculation</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- ======================Header Code ENDS here==================== -->
+
+  
+
+
+
+  <div class="hero">
+    <div class="hero-text">
+      <div class="hero-title-text">
+        <h1>Your own electricity thanks to <span>a solar system?</span> Now for the offer</h1>
+        <p>Join over 15,000 satisfied customers and become your own electricity producer with a photovoltaic system.</p>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/Solar Panel/solar panel.jpg" alt="Hero Image">
+    </div>
+    
+    <div class="hero-search">
+      <!-- <form id="address-form">
+        <input type="text" id="location-input" placeholder="Search Your Location here...">
+        <button type="submit" id="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        
+      </form> -->
+      <form id="address-form" action="/map" method="get">
+        <input type="search" id="location-input" name="location" placeholder="Search Your Location here...">
+        <button type="submit" id="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+
+
+
+    </div>
+  </div>
+
+  <!-- ==========================Featured Section Code here ======================== -->
+  <div class="customer-section-inside">
+    <section class="featured-section">
+      <div class="featured-title">
+        <h3>Behold the magic of efficiency and simplicity - <span>this is how it works!</span></h3>
+      </div>
+      <div class="featured-item item1">
+        <div class="featured-logo">
+          <i class="fa-solid fa-battery-full"></i>
+        </div>
+
+        <h3>Your roof, your potential</h3>
+        <p>Ready to switch to solar energy? Simply tell us your location and we'll create a customized, no-obligation
+          quote for a solar system on your roof. Enjoy the benefits of sustainable energy while reducing your carbon
+          footprint. Get started today!</p>
+      </div>
+
+      <div class="item12">
+
+        <div class="featured-item item">
+          <div class="featured-logo">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <h3>Made-to-measure solution</h3>
+          <p>Together we will find the best solution for you. We don't have a "standard" installation. The project will
+            be
+            tailor-made for your house, budget and schedule.</p>
+        </div>
+
+        <div class="featured-item item">
+         
+          <div class="featured-logo">
+            <i class="fa-solid fa-hand-holding-hand"></i>
+          </div>
+          <h3>All-round carefree service</h3>
+          <p>Together with our Swiss installation companies, we take care of everything: from planning to commissioning
+            and applying for subsidies.</p>
+        </div>
+      </div>
+
+      <div class="featured-item item1">
+        <div class="featured-logo">
+          <i class="fa-solid fa-dna"></i>
+        </div>
+       
+      </body>
+      </div>
+
+    </section>
+
+
+    <!-- ===============================Happy Customers ============= -->
+
+    <div class="customer-section">
+      <div class="image-container">
+        <img src="images/Feautred-Section/Otovo is Europe_s largest solar platform.png" alt="Image description">
+      </div>
+      <div class="text-container">
+        <h2>Join over <span>15,000 happy customers</span></h2>
+        <p>In 2023, SFOE became the <span>market leader</span> for private solar systems in Norway. Since then we have
+          made over <span>15,000 customers happy in 13 countries.</span></p>
+        <p>We can't wait to help people like you get affordable, green power.</p>
+        <p>Incidentally, SFOE is a <span>financially strong company that is traded</span> on the stock exchange and is
+          therefore a
+          certified, reliable partner.</p>
+      </div>
+    </div>
+
+    <div class="otovo-section">
+      <div class="text-container">
+        <h2>Why <span>SFOE?</span></h2>
+        <ul>
+          
+          <li>
+            <p> <span>All-round carefree service:</span> We take care of everything until the solar power is flowing!
+              From planning
+              your
+              PV system to commissioning and of course applying for subsidies. After the installation, we are still
+              available as a contact person.</p>
+          </li>
+          <li>
+            <p> <span>Cost savings:</span>we compare the offers of our partners in your area and select the installer
+              with the best
+              offer.</p>
+          </li>
+          <li>
+            <p> <span>Flexible financing:</span> You have the choice between renting and direct purchase. We would be
+              happy to advise
+              you.
+            </p>
+          </li>
+          <li>
+            <p> <span>Quality & safety:</span> Our experienced photovoltaic partners install your solar system
+              professionally and meet the highest safety standards.</p>
+          </li>
+          <li>
+            <p> <span>Regionality:</span> We plan every solar project from Zurich and work exclusively with regional
+              Swiss installation companies.</p>
+          </li>
+          <!-- <li>
+           <p></p> <span>Reliability:</span>As the market leader in several countries, we offer longer guarantees than are usual in
+              Switzerland. How come? We rely exclusively on high-quality hardware (e.g. at least 25 years performance
+              guarantee for all PV modules) and have every system checked by an independent Swiss inspector.</p>
+          </li> -->
+        </ul>
+      </div>
+
+      <div class="image-container">
+        <img src="images/Feautred-Section/All-round carefree service for solar systems.png" alt="Image description">
+      </div>
+
+    </div>
+
+
+    <div class="otovo-section solar-energy">
+      <div class="image-container">
+        <img src="images/Feautred-Section/pngegg (14).png" alt="Image description">
+      </div>
+
+      <div class="text-container">
+
+        <h2>Why <span>solar energy?</span></h2>
+        <ul>
+          <li>
+            <p> <span>Sustainability:</span> With solar power, the energy transition is not just a buzzword. Get green
+              energy from an inexhaustible source.</p>
+          </li>
+          <li>
+            <p> <span>Cost savings:</span> In many cases, a solar rental with Otovo is cheaper than your current
+              electricity bill. Alternatively, your investment will pay for itself in a few years if you buy it
+              directly.</p>
+          </li>
+          <li>
+            <p> <span>Independence: </span> The energy market is always good for a surprise. A solar system protects you
+              from rising electricity prices. </p>
+          </li>
+          <li>
+            <p> <span>Profitability:</span> The remuneration for solar power is constantly increasing. Feed the surplus
+              from your system into the Swiss electricity grid and get the return.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="customer-section system-galance">
+
+      <div class="text-container">
+        <h2>Your <span>system at a glance</span> at all times</h2>
+        <p>We make it easy for you to see what your plant is producing. You can see your production for each day, each
+          week and each month. You can also follow the production in real time!</p>
+        <p>In the app you will also find a separate environmental section. There you can see the <b>CO2 equivalent of
+            your annual production</b> and realize how important your solar system is for the environment. Feel good.
+        </p>
+      </div>
+      <div class="image-container system-image">
+        <img src="images/Feautred-Section/Track solar power via app.png" alt="Image description">
+      </div>
+    </div>
+
+
+
+  </div>
+  <footer>
+    <div class="footer-top container">
+
+      <div class="row">
+        <div class="footer-title">
+          <h3>Solar power made simple: quality, savings, and service.</h3>
+        </div>
+
+        <div class="col-md-4">
+          <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 SFOE. All rights reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="#">Terms and Conditions <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="#">Rental Conditions <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="#">Documentation <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+
+    const menuIcon = document.querySelector('.menu-icon');
+    const menu = document.querySelector('.menu');
+    const menuLinks = document.querySelectorAll('.menu a');
+    menuIcon.addEventListener('click', () => {
+      menuIcon.classList.toggle('active');
+      menu.classList.toggle('active');
+    });
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menuIcon.classList.remove('active');
+        menu.classList.remove('active');
+      });
+    });
+    document.addEventListener('click', (event) => {
+      const isClickInsideMenu = menu.contains(event.target);
+      const isClickInsideMenuIcon = menuIcon.contains(event.target);
+      if (!isClickInsideMenu && !isClickInsideMenuIcon) {
+        menuIcon.classList.remove('active');
+        menu.classList.remove('active');
+      }
+    });
+
+    </script>
+   <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+   <script>
+    function loadGoogleTranslate(){
+      new google.translate.TranslateElement("language")
+    }
+ loadGoogleTranslate()
+   </script>
+</body>
+
+</html>

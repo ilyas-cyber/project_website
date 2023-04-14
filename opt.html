@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Send OTP Email</title>
+  </head>
+  <body>
+    <form id="otp-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit">Send OTP</button>
+    </form>
+    
+    <script>
+      const otpForm = document.querySelector('#otp-form');
+      
+      otpForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = document.querySelector('#email').value;
+        fetch('/send-otp', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ email })
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.status === 'success') {
+            const otp = prompt('Enter the OTP code sent to your email:');
+            verifyOTP(otp);
+          } else {
+            alert('Invalid email address');
+          }
+        });
+      });
+      
+      function verifyOTP(otp) {
+        fetch('/verify-otp', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ otp })
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.status === 'success') {
+            alert('OTP verified successfully');
+          } else {
+            alert('Invalid OTP code');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
