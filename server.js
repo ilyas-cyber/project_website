@@ -51,8 +51,12 @@ app.get('/map', (req, res) => {
 });
   
 
-const urlDB = `mysql://${process.env.MYSQLUSER}:${process.env.MYSQLHOST}:${process.env.MYSQLPORT}/${process.env.MYSQLPASSWORD}`
-const connection = mysql.createConnection(urlDB);
+const connection = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "nodejs"
+});
 
 // connect to the database
 connection.connect(function(error){
