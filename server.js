@@ -52,10 +52,12 @@ app.get('/map', (req, res) => {
   
 
 const connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "nodejs"
+    MYSQLHOST: process.env.MYSQLHOST,
+    MYSQLUSER: process.env.MYSQLUSER,
+    MYSQLPASSWORD: process.env.MYSQLPASSWORD,
+    MYSQLDATABASE: process.env.MYSQLDATABASE,
+MYSQLPORT:process.env.MYSQLPORT,
+MYSQL_URL:`mysql://${MYSQLUSER}:${MYSQLPASSWORD}@${MYSQLHOST}:${MYSQLPORT}/${MYSQLDATABASE}`
 });
 
 // connect to the database
