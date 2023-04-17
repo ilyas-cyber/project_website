@@ -4,8 +4,10 @@
   "description": "",
   "main": "map.js",
   "scripts": {
-    "nodemon": "echo \"Error: no test specified\" && exit 1",
-    "build":"npm install"
+    "setup": "nodejs-16_x, npm-8_x ",
+    "install":"npm ci",
+    "build":"npm run build",
+    "start":"nodemon server.js"
   },
   "keywords": [],
   "author": "",
