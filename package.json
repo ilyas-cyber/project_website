@@ -7,7 +7,7 @@
     "setup": "nodejs-16_x, npm-8_x ",
     "install":"npm ci",
     "build":"npm run build",
-    "start":"nodemon server.js"
+    "start":"node app.js"
   },
   "keywords": [],
   "author": "",
